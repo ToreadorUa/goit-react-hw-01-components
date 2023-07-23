@@ -8,3 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 );
+
+export function generateColor() {
+  return '#' + Math.floor(Math.random()*16777215).toString(16)
+}
