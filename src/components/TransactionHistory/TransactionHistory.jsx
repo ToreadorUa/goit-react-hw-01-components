@@ -3,7 +3,7 @@ import css from './TransactionHistory.module.css';
 
 const Td = styled.td`
   padding: 5px 10px;
-  border: 1px solid #e5e5e5;
+
   text-align: center;
   background-color: white;
 `;
