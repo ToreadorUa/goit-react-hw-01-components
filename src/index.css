@@ -20,3 +20,6 @@ code {
   padding: 0;
   list-style-type: none;
 }
+table{
+  border-spacing: 1px;
+}

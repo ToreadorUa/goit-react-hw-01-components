@@ -1,14 +1,11 @@
 import styled from 'styled-components';
-import css from './TransactionHistory.module.css';
 
 const Td = styled.td`
   padding: 5px 10px;
-
   text-align: center;
-  background-color: white;
 `;
 const Tr = styled.tr`
-  :nth-child(even) {
+  &:nth-child(even) {
     background: #f7f7f7;
   }
 `;
@@ -17,11 +14,11 @@ const TdName = styled(Td)`
 `;
 
 export const TransactionsHistory = ({ type, amount, currency }) => (
-  <tr className={css.qwe}>
+  <Tr>
     <TdName>{type}</TdName>
     <Td>{amount}</Td>
     <Td>{currency}</Td>
-  </tr>
+  </Tr>
 );
 
 console.dir(Tr);

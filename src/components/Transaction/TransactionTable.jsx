@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import { TransactionsHistory } from 'components/TransactionHistory/TransactionHistory';
-import css from './TransactionTable.module.css';
+
 import styled from 'styled-components';
 
 const Th = styled.th`
   font-weight: 600;
   padding: 5px;
   background: #00bcd5;
-  border: 1px solid #fff;
   color: white;
   text-transform: uppercase;
 `;
@@ -19,13 +18,10 @@ const Table = styled.table`
   width: 600px;
   border-radius: 5px;
   border: 1px solid #e5e5e5;
-  & tbody & tr:nth-child(odd) {
-    background: #fff;
-  }
 `;
 
 export const TransactionTable = ({ transactions }) => (
-  <Table className={css.transactionHistory}>
+  <Table>
     <thead>
       <tr>
         <Th>Type</Th>
