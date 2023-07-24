@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from './StatItem.module.css';
 import { generateColor } from 'index';
 
